@@ -1,0 +1,54 @@
+{
+  "WorkTimes": [
+    {
+      "Day": 1,
+      "EarlyPossibleStart": "07:30:00",
+      "Start": "07:30:00",
+      "End": "17:00:00",
+      "Break": "00:45:00"
+    },
+    {
+      "Day": 2,
+      "EarlyPossibleStart": "07:30:00",
+      "Start": "07:30:00",
+      "End": "17:00:00",
+      "Break": "00:45:00"
+    },
+    {
+      "Day": 3,
+      "EarlyPossibleStart": "07:30:00",
+      "Start": "07:30:00",
+      "End": "17:00:00",
+      "Break": "00:45:00"
+    },
+    {
+      "Day": 4,
+      "EarlyPossibleStart": "07:30:00",
+      "Start": "07:30:00",
+      "End": "17:00:00",
+      "Break": "00:45:00"
+    },
+    {
+      "Day": 5,
+      "EarlyPossibleStart": "07:30:00",
+      "Start": "07:30:00",
+      "End": "13:00:00",
+      "Break": "00:15:00"
+    },
+    {
+      "Day": 6,
+      "EarlyPossibleStart": "00:00:00",
+      "Start": "00:00:00",
+      "End": "00:00:00",
+      "Break": "00:00:00"
+    },
+    {
+      "Day": 0,
+      "EarlyPossibleStart": "00:00:00",
+      "Start": "00:00:00",
+      "End": "00:00:00",
+      "Break": "00:00:00"
+    }
+  ],
+  "OvertimeGrace": "00:15:00"
+}

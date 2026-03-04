@@ -1,0 +1,40 @@
+<UserControl x:Class="Net2WorkingHours.Controls.MonthSummaryControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <StackPanel x:Name="MonthSummaryPanel">
+        <DataGrid x:Name="MonthSummaryDataGrid" AutoGenerateColumns="False" Height="550" Margin="0,0,0,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Datum" Binding="{Binding Date}" />
+                <DataGridTextColumn Header="Wochentag" Binding="{Binding Weekday}" />
+                <DataGridTextColumn Header="Eintritt" Binding="{Binding EntryTime}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsEntryTimeInWork}" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Austritt" Binding="{Binding ExitTime}">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsExitTimeInWork}" Value="True">
+                                    <Setter Property="Background" Value="Red"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Normalarbeitszeit" Binding="{Binding NormalHours}" />
+                <DataGridTextColumn Header="Mehrarbeitszeit" Binding="{Binding OvertimeHours}" />
+                <DataGridTextColumn Header="Pause (Min)" Binding="{Binding BreakMinutes}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>

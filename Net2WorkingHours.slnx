@@ -1,0 +1,26 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/Projektmappenelemente/">
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/samples/">
+    <File Path="samples/sample.csv" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Net2WorkingHours.Core/Net2WorkingHours.Core.csproj">
+      <Platform Solution="*|x64" Project="x64" />
+    </Project>
+    <Project Path="src/Net2WorkingHours/Net2WorkingHours.csproj">
+      <Platform Solution="*|x64" Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Net2WorkingHours.Tests/Net2WorkingHours.Tests.csproj">
+      <Platform Solution="*|x64" Project="x64" />
+    </Project>
+  </Folder>
+</Solution>

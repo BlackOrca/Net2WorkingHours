@@ -1,0 +1,95 @@
+<UserControl x:Class="Net2WorkingHours.Controls.SettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="400">
+    <StackPanel Margin="10">
+        <TextBlock Text="Arbeitszeiten pro Tag" FontWeight="Bold" Margin="0,0,0,10" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Tag" Grid.Column="0" FontWeight="Bold" />
+            <TextBlock Text="Frühester Start" Grid.Column="1" FontWeight="Bold" />
+            <TextBlock Text="Start" Grid.Column="2" FontWeight="Bold" />
+            <TextBlock Text="Ende" Grid.Column="3" FontWeight="Bold" />
+            <!-- Mo-Fr -->
+            <TextBlock Text="Montag" Grid.Row="1" Grid.Column="0" />
+            <TextBox x:Name="EarlyMonday" Grid.Row="1" Grid.Column="1" Width="60" Text="08:00" />
+            <TextBox x:Name="StartMonday" Grid.Row="1" Grid.Column="2" Width="60" Text="08:00" />
+            <TextBox x:Name="EndMonday" Grid.Row="1" Grid.Column="3" Width="60" Text="17:00" />
+            <TextBlock Text="Dienstag" Grid.Row="2" Grid.Column="0" />
+            <TextBox x:Name="EarlyTuesday" Grid.Row="2" Grid.Column="1" Width="60" Text="08:00" />
+            <TextBox x:Name="StartTuesday" Grid.Row="2" Grid.Column="2" Width="60" Text="08:00" />
+            <TextBox x:Name="EndTuesday" Grid.Row="2" Grid.Column="3" Width="60" Text="17:00" />
+            <TextBlock Text="Mittwoch" Grid.Row="3" Grid.Column="0" />
+            <TextBox x:Name="EarlyWednesday" Grid.Row="3" Grid.Column="1" Width="60" Text="08:00" />
+            <TextBox x:Name="StartWednesday" Grid.Row="3" Grid.Column="2" Width="60" Text="08:00" />
+            <TextBox x:Name="EndWednesday" Grid.Row="3" Grid.Column="3" Width="60" Text="17:00" />
+            <TextBlock Text="Donnerstag" Grid.Row="4" Grid.Column="0" />
+            <TextBox x:Name="EarlyThursday" Grid.Row="4" Grid.Column="1" Width="60" Text="08:00" />
+            <TextBox x:Name="StartThursday" Grid.Row="4" Grid.Column="2" Width="60" Text="08:00" />
+            <TextBox x:Name="EndThursday" Grid.Row="4" Grid.Column="3" Width="60" Text="17:00" />
+            <TextBlock Text="Freitag" Grid.Row="5" Grid.Column="0" />
+            <TextBox x:Name="EarlyFriday" Grid.Row="5" Grid.Column="1" Width="60" Text="08:00" />
+            <TextBox x:Name="StartFriday" Grid.Row="5" Grid.Column="2" Width="60" Text="08:00" />
+            <TextBox x:Name="EndFriday" Grid.Row="5" Grid.Column="3" Width="60" Text="17:00" />
+            <TextBlock Text="Samstag" Grid.Row="6" Grid.Column="0" />
+            <TextBox x:Name="EarlySaturday" Grid.Row="6" Grid.Column="1" Width="60" Text="00:00" />
+            <TextBox x:Name="StartSaturday" Grid.Row="6" Grid.Column="2" Width="60" Text="00:00" />
+            <TextBox x:Name="EndSaturday" Grid.Row="6" Grid.Column="3" Width="60" Text="00:00" />
+            <TextBlock Text="Sonntag" Grid.Row="7" Grid.Column="0" />
+            <TextBox x:Name="EarlySunday" Grid.Row="7" Grid.Column="1" Width="60" Text="00:00" />
+            <TextBox x:Name="StartSunday" Grid.Row="7" Grid.Column="2" Width="60" Text="00:00" />
+            <TextBox x:Name="EndSunday" Grid.Row="7" Grid.Column="3" Width="60" Text="00:00" />
+        </Grid>
+        <TextBlock Text="Pausenzeit pro Tag (in Minuten)" FontWeight="Bold" Margin="0,20,0,5" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Montag" Grid.Row="0" Grid.Column="0" />
+            <TextBox x:Name="BreakMonday" Grid.Row="0" Grid.Column="1" Width="60" Text="60" />
+            <TextBlock Text="Dienstag" Grid.Row="1" Grid.Column="0" />
+            <TextBox x:Name="BreakTuesday" Grid.Row="1" Grid.Column="1" Width="60" Text="60" />
+            <TextBlock Text="Mittwoch" Grid.Row="2" Grid.Column="0" />
+            <TextBox x:Name="BreakWednesday" Grid.Row="2" Grid.Column="1" Width="60" Text="60" />
+            <TextBlock Text="Donnerstag" Grid.Row="3" Grid.Column="0" />
+            <TextBox x:Name="BreakThursday" Grid.Row="3" Grid.Column="1" Width="60" Text="60" />
+            <TextBlock Text="Freitag" Grid.Row="4" Grid.Column="0" />
+            <TextBox x:Name="BreakFriday" Grid.Row="4" Grid.Column="1" Width="60" Text="60" />
+            <TextBlock Text="Samstag" Grid.Row="5" Grid.Column="0" />
+            <TextBox x:Name="BreakSaturday" Grid.Row="5" Grid.Column="1" Width="60" Text="0" />
+            <TextBlock Text="Sonntag" Grid.Row="6" Grid.Column="0" />
+            <TextBox x:Name="BreakSunday" Grid.Row="6" Grid.Column="1" Width="60" Text="0" />
+        </Grid>
+        <TextBlock Text="Karenzzeit für Überstunden (in Minuten)" FontWeight="Bold" Margin="0,20,0,5" />
+        <TextBox x:Name="OvertimeGrace" Width="60" Text="15" />
+        <Button Content="Speichern" Margin="0,20,0,0" Width="100" HorizontalAlignment="Left" Click="OnSaveClicked" />
+    </StackPanel>
+</UserControl>
